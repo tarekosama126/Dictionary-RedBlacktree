@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="841.0" prefWidth="1476.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Red_Black.Source">
+   <children>
+      <Text fill="#8a8383" layoutX="166.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ELE5WA" wrappingWidth="486.13671875">
+         <font>
+            <Font name="Rockwell Nova" size="109.0" />
+         </font>
+      </Text>
+      <Button fx:id="InsertFile" layoutX="176.0" layoutY="179.0" mnemonicParsing="false" onAction="#AddFile" prefHeight="44.0" prefWidth="361.0" style="-fx-background-color: #9a8484;" text="Insert Tree">
+         <font>
+            <Font name="Verdana Pro Cond SemiBold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="InsertWord" layoutX="176.0" layoutY="259.0" mnemonicParsing="false" onAction="#ShowAddWord" prefHeight="44.0" prefWidth="361.0" style="-fx-background-color: #9a8484;" text="Insert Word">
+         <font>
+            <Font name="Verdana Pro Cond SemiBold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="DeleteFile" layoutX="176.0" layoutY="344.0" mnemonicParsing="false" onAction="#Deletefile" prefHeight="44.0" prefWidth="361.0" style="-fx-background-color: #9a8484;" text="Delete Tree">
+         <font>
+            <Font name="Verdana Pro Cond SemiBold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="DeleteWord" layoutX="176.0" layoutY="434.0" mnemonicParsing="false" onAction="#ShowDeleteWord" prefHeight="44.0" prefWidth="361.0" style="-fx-background-color: #9a8484;" text="Delete Word">
+         <font>
+            <Font name="Verdana Pro Cond SemiBold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="Search" layoutX="176.0" layoutY="527.0" mnemonicParsing="false" onAction="#ShowSearchWord" prefHeight="44.0" prefWidth="361.0" style="-fx-background-color: #9a8484;" text="Search">
+         <font>
+            <Font name="Verdana Pro Cond SemiBold" size="14.0" />
+         </font>
+      </Button>
+      <Text fill="#8a8383" layoutX="176.0" layoutY="665.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DICTIONARY">
+         <font>
+            <Font name="Rockwell Nova" size="75.0" />
+         </font>
+      </Text>
+      <TextField fx:id="insertwordtxtfield" layoutX="176.0" layoutY="340.0" prefHeight="25.0" prefWidth="289.0" visible="false" />
+      <Button fx:id="Add" layoutX="485.0" layoutY="340.0" mnemonicParsing="false" onAction="#AddWord" prefHeight="25.0" prefWidth="117.0" text="Add" visible="false" />
+      <Button fx:id="Back" layoutX="615.0" layoutY="340.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="55.0" text="Back" visible="false" />
+      <Label layoutX="1186.0" layoutY="237.0" prefHeight="44.0" prefWidth="202.0" text="Dictionary Size ">
+         <font>
+            <Font name="Ink Free" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="1193.0" layoutY="87.0" text="Tree Height">
+         <font>
+            <Font name="Ink Free" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="HeightLabel" layoutX="1228.0" layoutY="150.0" prefHeight="59.0" prefWidth="75.0" text="0">
+         <font>
+            <Font name="Ink Free" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="DisSizeLabel" layoutX="1228.0" layoutY="303.0" prefHeight="59.0" prefWidth="75.0" text="0">
+         <font>
+            <Font name="Ink Free" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="Delete" layoutX="485.0" layoutY="340.0" mnemonicParsing="false" onAction="#DeleteWord" prefHeight="25.0" prefWidth="117.0" text="Delete" visible="false" />
+      <Button fx:id="Search2" layoutX="491.0" layoutY="340.0" mnemonicParsing="false" onAction="#SearchWord" prefHeight="25.0" prefWidth="117.0" text="Search" visible="false" />
+      <ListView fx:id="MylistView2" layoutX="715.0" layoutY="66.0" prefHeight="607.0" prefWidth="444.0" />
+   </children>
+</AnchorPane>
